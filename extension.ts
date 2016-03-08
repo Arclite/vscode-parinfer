@@ -28,7 +28,7 @@ function fromEditorPosition(editorPosition: Position): IPosition {
 	return { row: editorPosition.line, column: editorPosition.character };
 }
 
-function shouldRun(fileName: string): boolean {
+export function shouldRun(fileName: string): boolean {
 	return /\.clj[csx]?$|build\.boot$/.test(fileName);
 }
 
